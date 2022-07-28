@@ -26,6 +26,11 @@ export default function App() {
     console.log('name');
   }, [name]);
 
+  //마운트 될때만 실행
+  useEffect(() => {
+    console.log('마운트');
+  }, []);
+
   return (
     <div>
       <div>
